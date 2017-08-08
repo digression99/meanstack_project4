@@ -4,15 +4,25 @@ mean stack from front to back
 =============================
 
 사용 기술
+
 passportjs
+
 json web token -> jwt ->token generation & authentication
+
 cors
+
 mongoose odm
+
 angular 2 / angular cli
+
 angular router, http module
+
 angular2 jwt
+
 auth guard
+
 angular flash message module
+
 deploy -> heroku
 
 
