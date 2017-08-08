@@ -1,28 +1,30 @@
 
-20170809 new project
+20170809
+
+new meanstack project
 =============================
 
-# 사용 기술
+### 사용 기술
 
 >passportjs
 
->>json web token -> jwt ->token generation & authentication
+>json web token -> jwt ->token generation & authentication
 
->>>cors
+>cors
 
-mongoose odm
+>mongoose odm
 
-angular 2 / angular cli
+>angular 2 / angular cli
 
-angular router, http module
+>angular router, http module
 
-angular2 jwt
+>angular2 jwt
 
-auth guard
+>auth guard
 
-angular flash message module
+>angular flash message module
 
-deploy -> heroku
+>deploy -> heroku
 
 
 // cors -> different domain name 에서 데이터를 읽을 수 있게 한다.
