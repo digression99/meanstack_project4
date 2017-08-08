@@ -7,7 +7,7 @@ new meanstack project
 
 ### 사용 기술
 
-  passportjs
+  passportjs<br>
   json web token -> jwt ->token generation & authentication
   cors
   mongoose odm
