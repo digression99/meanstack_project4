@@ -2,6 +2,7 @@
 20170809
 
 new meanstack project
+[URL](pseudocoder.rocks)
 =============================
 
 ### 사용 기술
