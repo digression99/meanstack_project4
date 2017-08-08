@@ -19,8 +19,7 @@ new meanstack project
 - deploy -> heroku<br>
 
 > cors -> different domain name 에서 데이터를 읽을 수 있게 한다.<br>
-  search cors npm<br>
-  <br>
+  search cors npm<br><br>
 > angular 2 use<br>
   angular 2 crash course 를 추천.. 이거 끝나면 보고 다시 이해해보자.<br>
     - 사용하기<br>
