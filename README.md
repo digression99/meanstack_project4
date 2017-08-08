@@ -1,15 +1,14 @@
 
-20170807
-mean stack from front to back
+20170809 new project
 =============================
 
-사용 기술
+#사용 기술
 
-passportjs
+>passportjs
 
-json web token -> jwt ->token generation & authentication
+>>json web token -> jwt ->token generation & authentication
 
-cors
+>>>cors
 
 mongoose odm
 
