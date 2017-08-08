@@ -99,8 +99,8 @@ inf. future goals
 
 ### CHECKLIST
 
-[ ] one
-[X] two
+- [ ] one
+- [X] two
 
 
 
