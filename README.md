@@ -49,7 +49,7 @@ ng g component navbar // g -> generate
 
 서비스 생성하기 -> ng g service validate // in services folder
 
------------------------ 20170809 new project
+### PROJECT SCHEMA
 
 (*) informations needed for this project
 - webstorm es6 : preferences -> languages & frameworks -> javascript => change version to es6
@@ -96,6 +96,13 @@ inf. future goals
 -- use membership functionality to make blog for each person.
 -- -> if you log in, then it's your own porfolio site.
 -- -> 
+
+### CHECKLIST
+
+[ ] one
+[X] two
+
+
 
 [issues]
 issue 1 :
