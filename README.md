@@ -40,7 +40,17 @@ ng g component navbar // g -> generate
 
 ----------------------- 20170809 new project
 
-(*) webstorm es6 : preferences -> languages & frameworks -> javascript => change version to es6
+(*) informations needed for this project
+- webstorm es6 : preferences -> languages & frameworks -> javascript => change version to es6
+- git conflict problems
+| first, in locally, you should add and commit to your local master.
+| then, you can push it to the remote repo.
+| finally, pull that data to your local master.
+| [shell command] 
+| git add .
+| git commit -m "for pull"
+| git push origin master
+| git pull origin master
 
 (*) some initial changes from project3
 - use local mongodb until the project is finished then use mlab.
