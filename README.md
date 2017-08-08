@@ -18,12 +18,12 @@ new meanstack project
 - angular flash message module<br>
 - deploy -> heroku<br>
 
-> cors -> different domain name 에서 데이터를 읽을 수 있게 한다.
-  search cors npm
-
-  angular 2 use
-  angular 2 crash course 를 추천.. 이거 끝나면 보고 다시 이해해보자.
-    - 사용하기
+> cors -> different domain name 에서 데이터를 읽을 수 있게 한다.<br>
+  search cors npm<br>
+  <br>
+> angular 2 use<br>
+  angular 2 crash course 를 추천.. 이거 끝나면 보고 다시 이해해보자.<br>
+    - 사용하기<br>
     ```
     npm install -g angular-cli
     ng new angular-src // angular-src 는 원하는 파일이름으로 생성하면 된다.
