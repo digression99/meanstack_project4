@@ -104,15 +104,17 @@ git pull origin master
 
 
 ### issues
-  1.
+  1. post request works when after build. can't I do work in developing mode?
   2. 
   3.
 
-## Angular 4 crash course
+# Angular 4 crash course
   - angular is cross platform framework.
   - typescript -> similar to java, C<br>
     in javascript class, you should use prototype to make the method for that class.<br>
     in typescript, you dont need that.
+  - if you're going to use ng serve and in another terminal you want to do some generation,
+  you should be in the folder angular-src...
     
 ```
 import {Component} from '@angular/core';
@@ -147,6 +149,117 @@ export class UserService {
 - dependencies -> nodejs, npm
 
 - coding -> in pseudocoder app
+```
+starting project
+in shell
+ng new ang4app // init the project
+```
+
+- e2e -> end to end testing.
+- app.module.ts -> need to add to here when you make something.
+-spec.ts -> for testing.
+
+- make components
+  1. make dir
+  2. in shell, `ng g component components/user`
+
+to use, in app.component.html -> `<app-user></app-user>` ( selector)<br>
+or inject in any \*.component.html
+
+- {{name}} -> string interpolation
+
+- you can't dynamically add field in the object.
+
+- you can make interface and reuse it.
+```
+address : Address
+...
+...
+interface Address {
+    street : string,
+    city : string,
+    state : string
+}
+
+```
+
+- anytypes : any; // any for single value or dynamic field??
+
+### adding an event
+```
+
+in html,
+<button (click)="onClick()">Click Me</button>
+
+in user.components.ts,
+onClick() {
+  console.log('hello');
+}
+
+```
+
+- typescript array use
+
+`array.splice(index, deleteCount) : delete the item starting in index, deleting deleteCount of the item.`<br>
+
+- if I use ngModel, then it changes the data immediately. -> responsive.
+```
+in html,
+<label for="name">Name : </label>
+<input type="text" [(ngModel)]="name" name="name">
+
+in .ts,
+export class User {
+  name : string,
+  ...
+}
+
+```
+
+### using service
+
+```
+in shell,
+ng g service services/data
+
+in app.module.ts,
+import {DataService} from './services/data.service';
+
+...
+providers : [DataService];
+
+in user.component.ts,
+import {DataService} from '../../services/data.service';
+
+constuctor(private dataService : DataService) { ..
+```
+
+### post request
+- http://jsonplaceholder.typicode.com/
+
+```
+in app.module.ts,
+import {HttpModule} from '@angular/http';
+...
+imports: [
+    HttpModule];
+
+in data.service,
+getPosts() {
+    return this.http.get('http://jsonplaceholder.typicode.com/posts').map(res => res.json());
+  }
+```
+
+### use router
+```
+in app.module.ts,
+import {RouterModule, Routes} from '@angular/router';
+// add it to app.
+
+
+```
+
+
 
 
 
