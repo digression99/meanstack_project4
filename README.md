@@ -146,6 +146,8 @@ export class UserService {
 - angular cli -> command line interface.
 - dependencies -> nodejs, npm
 
+- coding -> in pseudocoder app
+
 
 
 
