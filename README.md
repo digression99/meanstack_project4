@@ -147,6 +147,12 @@ export class UserService {
 - dependencies -> nodejs, npm
 
 - coding -> in pseudocoder app
+```
+starting project
+in shell
+ng new ang4app // init the project
+```
+
 
 
 
