@@ -52,9 +52,9 @@ ng g component navbar // g -> generate
 (*) informations needed for this project
 - webstorm es6 : preferences -> languages & frameworks -> javascript => change version to es6
 - git conflict problems
-| first, in locally, you should add and commit to your local master.
-| then, you can push it to the remote repo.
-| finally, pull that data to your local master.
+  - first, in locally, you should add and commit to your local master.
+  - then, you can push it to the remote repo.
+  - finally, pull that data to your local master.
 ```
 | [shell command] 
 | git add .
