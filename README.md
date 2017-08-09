@@ -49,21 +49,22 @@ ng g component navbar // g -> generate
 
 ### PROJECT SCHEMA
 
-(*) informations needed for this project
+##### informations needed for this project
 - webstorm es6 : preferences -> languages & frameworks -> javascript => change version to es6
 - git conflict problems
   - first, in locally, you should add and commit to your local master.
   - then, you can push it to the remote repo.
   - finally, pull that data to your local master.
-```
+
 #### shell command
+```
 git add .
 git commit -m "for pull"
 git push origin master
 git pull origin master
 ```
 
-(*) some initial changes from project3
+##### some initial changes from project3
 - use local mongodb until the project is finished then use mlab.
 -> shell : mongod --dbpath ./mongodb
 -> db url : 'mongodb://localhost:27017/meanstack_project4'
@@ -71,7 +72,7 @@ git pull origin master
 
 - use port 3000 incase of http.
 
-(*) my goal for this project
+##### my goal for this project
 
 0. purpose
   - the goal is to make my own portfolio-ish bloggy site.
