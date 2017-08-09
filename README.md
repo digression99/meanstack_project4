@@ -104,7 +104,7 @@ git pull origin master
 
 
 ### issues
-  1.
+  1. post request works when after build. can't I do work in developing mode?
   2. 
   3.
 
