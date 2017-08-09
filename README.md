@@ -102,7 +102,7 @@ inf. future goals
 
 
 
-[issues]
-issue 1 :
-issue 2 : 
-issue 3 :
+### issues
+  1.
+  2. 
+  3.
