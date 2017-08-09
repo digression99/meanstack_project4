@@ -109,8 +109,42 @@ git pull origin master
   3.
 
 ## Angular 4 crash course
-  - one two three
-  - four five six
+  - angular is cross platform framework.
+  - typescript -> similar to java, C<br>
+    in javascript class, you should use prototype to make the method for that class.<br>
+    in typescript, you dont need that.
+    
+```
+import {Component} from '@angular/core';
+
+// component -> sections of UI can be broken into encapsulated components.
+// decorator -> attach metadata to our component.
+#Component({
+  selector : 'my-app', // custom html tag.
+  template : '<h1> hello, {{name}}</h1>' // html or dynamic properties.
+})
+
+export class AppComponent {
+  name = 'Angular';
+}
+
+// services -> classes that send data and functionality across components.
+// ideal place for ajax calls.
+import {Injectable} from '@angular/core';
+
+import {User} from './user'; // class or interface defining user.
+import {USERS} from './mock-users'; // data, json.
+
+@Injectable()
+export class UserService {
+  getUsers() : User[] {
+    return USERS;
+  }
+}
+```
+
+- angular cli -> command line interface.
+- dependencies -> nodejs, npm
 
 
 
