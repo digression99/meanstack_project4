@@ -74,10 +74,10 @@ ng g component navbar // g -> generate
 (*) my goal for this project
 
 0. purpose
--- the goal is to make my own portfolio-ish bloggy site.
--- not that fancy, but I can add whatever I want to this site.
--- I can immediately add some webgl project or my new website starting from this site.
--- I can do all kinds of experiment with this site.
+  - the goal is to make my own portfolio-ish bloggy site.
+  - not that fancy, but I can add whatever I want to this site.
+  - I can immediately add some webgl project or my new website starting from this site.
+  - I can do all kinds of experiment with this site.
 
 1. add full crud functionality to membership management.
 -> add delete account, add update account info.
@@ -86,14 +86,14 @@ ng g component navbar // g -> generate
 2. add tables for any post and add full crud functionality to it.
 -> for example, if I put some li to navbar like my profile,
 
-3.
+3. use dashboard to your own portfolio dashbard.
 
 
 
-inf. future goals
--- use membership functionality to make blog for each person.
--- -> if you log in, then it's your own porfolio site.
--- -> 
+### future goals
+- use membership functionality to make blog for each person.
+- -> if you log in, then it's your own porfolio site.
+- -> 
 
 ### CHECKLIST
 
