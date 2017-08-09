@@ -113,6 +113,8 @@ git pull origin master
   - typescript -> similar to java, C<br>
     in javascript class, you should use prototype to make the method for that class.<br>
     in typescript, you dont need that.
+  - if you're going to use ng serve and in another terminal you want to do some generation,
+  you should be in the folder angular-src...
     
 ```
 import {Component} from '@angular/core';
@@ -212,10 +214,51 @@ export class User {
   ...
 }
 
+```
 
+### using service
+
+```
+in shell,
+ng g service services/data
+
+in app.module.ts,
+import {DataService} from './services/data.service';
+
+...
+providers : [DataService];
+
+in user.component.ts,
+import {DataService} from '../../services/data.service';
+
+constuctor(private dataService : DataService) { ..
+```
+
+### post request
+- http://jsonplaceholder.typicode.com/
+
+```
+in app.module.ts,
+import {HttpModule} from '@angular/http';
+...
+imports: [
+    HttpModule];
+
+in data.service,
+getPosts() {
+    return this.http.get('http://jsonplaceholder.typicode.com/posts').map(res => res.json());
+  }
+```
+
+### use router
+```
+in app.module.ts,
+import {RouterModule, Routes} from '@angular/router';
+// add it to app.
 
 
 ```
+
 
 
 
