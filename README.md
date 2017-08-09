@@ -108,7 +108,7 @@ git pull origin master
   2. 
   3.
 
-## Angular 4 crash course
+# Angular 4 crash course
   - angular is cross platform framework.
   - typescript -> similar to java, C<br>
     in javascript class, you should use prototype to make the method for that class.<br>
@@ -168,6 +168,7 @@ or inject in any \*.component.html
 
 - you can't dynamically add field in the object.
 
+- you can make interface and reuse it.
 ```
 address : Address
 ...
@@ -180,6 +181,41 @@ interface Address {
 
 ```
 
+- anytypes : any; // any for single value or dynamic field??
+
+### adding an event
+```
+
+in html,
+<button (click)="onClick()">Click Me</button>
+
+in user.components.ts,
+onClick() {
+  console.log('hello');
+}
+
+```
+
+- typescript array use
+
+`array.splice(index, deleteCount) : delete the item starting in index, deleting deleteCount of the item.`<br>
+
+- if I use ngModel, then it changes the data immediately. -> responsive.
+```
+in html,
+<label for="name">Name : </label>
+<input type="text" [(ngModel)]="name" name="name">
+
+in .ts,
+export class User {
+  name : string,
+  ...
+}
+
+
+
+
+```
 
 
 
