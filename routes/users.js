@@ -41,8 +41,8 @@ router.post('/authenticate', (req, res, next) => {
                     const token = jwt.sign(user, config.secret, {
                         expiresIn : 604800 // 1 week
                     });
-                    console.log('password matched.');
-                    console.log('token : ' + token);
+                    //console.log('password matched.');
+                    //console.log('token : ' + token);
 
                     res.json({
                         success : true,
