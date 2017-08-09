@@ -56,11 +56,11 @@ ng g component navbar // g -> generate
   - then, you can push it to the remote repo.
   - finally, pull that data to your local master.
 ```
-| [shell command] 
-| git add .
-| git commit -m "for pull"
-| git push origin master
-| git pull origin master
+#### shell command
+git add .
+git commit -m "for pull"
+git push origin master
+git pull origin master
 ```
 
 (*) some initial changes from project3
