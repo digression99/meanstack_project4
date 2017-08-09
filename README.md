@@ -153,6 +153,34 @@ in shell
 ng new ang4app // init the project
 ```
 
+- e2e -> end to end testing.
+- app.module.ts -> need to add to here when you make something.
+-spec.ts -> for testing.
+
+- make components
+  1. make dir
+  2. in shell, `ng g component components/user`
+
+to use, in app.component.html -> `<app-user></app-user>` ( selector)<br>
+or inject in any \*.component.html
+
+- {{name}} -> string interpolation
+
+- you can't dynamically add field in the object.
+
+```
+address : Address
+...
+...
+interface Address {
+    street : string,
+    city : string,
+    state : string
+}
+
+```
+
+
 
 
 
