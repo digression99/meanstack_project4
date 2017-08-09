@@ -110,8 +110,7 @@ git pull origin master
 
 ## Angular 4 crash course
   - one two three
-    four five six
-  seven eight nine
+  - four five six
 
 
 
