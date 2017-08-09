@@ -1,0 +1,76 @@
+<h1>hello, {{name}}</h1>
+<a routerLink="/">Home</a>
+<a routerLink="/about">About</a>
+
+<ul class="list-group">
+  <li class = "list-group-item list-group-item-success">Age : {{age}}</li>
+  <li class = "list-group-item list-group-item-danger">Email : {{email}}</li>
+  <li class = "list-group-item list-group-item-warning">{{address.street}}, {{address.city}}, {{address.state}}</li>
+</ul>
+
+<button class="btn btn-primary" (click)="myEvent()">Click Me</button>
+<button class="btn btn-primary" (click)="toggleEdit()">Edit User</button>
+
+<div *ngIf="isEdit == true">
+  <h2>Edit User</h2>
+  <form>
+    <div class="row">
+      <div class="form-group col-md-4">
+        <label for="name">Name
+          <input type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="name">
+        </label>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="age">Age
+          <input type="number" class="form-control" [(ngModel)]="age" name="age">
+        </label>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="email">Email
+          <input type="email" class="form-control"  [(ngModel)]="email" name="email">
+        </label>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="street">Street
+          <input type="text" class="form-control" [(ngModel)]="address.street" name="street">
+        </label>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="city">City
+          <input type="text" class="form-control"  [(ngModel)]="address.city" name="city">
+        </label>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="state">State
+          <input type="text" class="form-control" [(ngModel)]="address.state" name="state">
+        </label>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<h2>Hobbies</h2>
+
+<form (submit)="addHobby(hobby.value)">
+  <div>
+    <label for="hobby">Hobby:</label>
+    <input type="text" #hobby>
+    <input class="btn btn-default" type="submit">
+  </div>
+</form>
+
+<ul>
+  <li class="list-group-item-text" *ngFor="let hobby of hobbies; let i = index">
+    {{i + 1}} : {{hobby}}
+    <button class = "btn btn-danger" (click)="deleteHobby(hobby)">delete</button>
+  </li>
+</ul>
+
+<ul>
+  <h2>Posts</h2>
+  <div *ngFor="let post of posts">
+    <h4>{{post.title}}</h4>
+    <p>{{post.body}}</p>
+  </div>
+</ul>

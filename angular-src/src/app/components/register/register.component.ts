@@ -34,6 +34,7 @@ export class RegisterComponent implements OnInit {
     };
 
     // required fields
+    console.log('in onRegisterSubmit.');
 
     if (!this.validateService.validateRegister(user)) {
       this.flashMessage.show('Please fill in all fields', {
@@ -52,6 +53,7 @@ export class RegisterComponent implements OnInit {
 
     // register user
     this.authService.registerUser(user).subscribe(data => {
+      console.log('in onRegisterSubmit(), ', data);
       if (data.success) {
         this.flashMessage.show('You are now registered and can login.', {
           cssClass : 'alert-success',
@@ -67,6 +69,5 @@ export class RegisterComponent implements OnInit {
         this.router.navigate(['/register']);
       }
     });
-
   }
 }

@@ -6,6 +6,8 @@ const jwt = require('jsonwebtoken');
 const config = require('../config/database');
 
 router.post('/register', (req, res, next) => {
+    console.log('in register route, post');
+
     let newUser = new User({
         name : req.body.name,
         email : req.body.email,
@@ -17,11 +19,10 @@ router.post('/register', (req, res, next) => {
         if (err) {
             res.json({success : false, msg : 'failed to register user'});
         } else {
+            // this data(success, msg) is going to the subscribe().
             res.json({success : true, msg : 'succeed to register user'});
         }
     });
-
-    //res.send('register');
 });
 
 // autheticate

@@ -18,13 +18,18 @@ import { AuthService} from './services/auth.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 
 import {AuthGuard} from './guards/auth.guard';
+import { UserComponent } from './components/user/user.component';
+
+import {DataService} from './services/data.service';
+import { AboutComponent } from './components/about/about.component';
 
 const appRoutes : Routes = [
   {path : '', component : HomeComponent},
   {path : 'register', component : RegisterComponent},
   {path : 'login', component : LoginComponent},
   {path : 'dashboard', component : DashboardComponent, canActivate : [AuthGuard]},
-  {path : 'profile', component : ProfileComponent, canActivate : [AuthGuard]}
+  {path : 'profile', component : ProfileComponent, canActivate : [AuthGuard]},
+  {path : 'about', component : AboutComponent}
 ];
 
 @NgModule({
@@ -35,16 +40,18 @@ const appRoutes : Routes = [
     RegisterComponent,
     HomeComponent,
     DashboardComponent,
-    ProfileComponent // ng g component로 하면 자동으로 추가된다.
+    ProfileComponent,
+    UserComponent,
+    AboutComponent // ng g component로 하면 자동으로 추가된다.
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
-    FlashMessagesModule
+    FlashMessagesModule,
   ],
-  providers: [ValidateService, AuthService, AuthGuard], // service 를 담는다.
+  providers: [ValidateService, AuthService, AuthGuard, DataService], // service 를 담는다.
   bootstrap: [AppComponent]
 })
 export class AppModule { }
