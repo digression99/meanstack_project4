@@ -99,6 +99,20 @@ git pull origin master
 ### CHECKLIST
 
 - [ ] 20170810 : add post making in the dashboard.
+
+#### plan
+- make a component name = "postdata"
+- add a service name = "postservice"
+- make a router for dashboard/add, dashboard/edit, dashboard/delete.
+- connect it to user and comments
+
+
+- comments -> component name = "comment"
+- service name = "commentService"
+- add a form below the from of post form.
+
+
+
 - [X] two
 
 
@@ -108,7 +122,9 @@ git pull origin master
   2. 
   3.
 
+
 # Angular 4 crash course
+========================
   - angular is cross platform framework.
   - typescript -> similar to java, C<br>
     in javascript class, you should use prototype to make the method for that class.<br>
