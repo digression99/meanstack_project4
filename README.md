@@ -119,7 +119,7 @@ git pull origin master
   1. post request works when after build. can't I do work in developing mode?
   2. post request returns 404 not found.
   -> sol : make db for the specific port. There was no db for meanstack_project4.
-  + set the url in authenticateUser to http://localhost:3000/users/authenticate.
+  + set the url in authenticateUser to `http://localhost:3000/users/authenticate.`
   3.
 
 
