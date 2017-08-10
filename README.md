@@ -98,7 +98,7 @@ git pull origin master
 
 ### CHECKLIST
 
-- [ ] one
+- [ ] 20170810 : add post making in the dashboard.
 - [X] two
 
 
