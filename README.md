@@ -111,15 +111,15 @@ git pull origin master
 - service name = "commentService"
 - add a form below the from of post form.
 
-
-
-- [X] two
+- [ ] add delete user account, edit user account functionality.
 
 
 
 ### issues
   1. post request works when after build. can't I do work in developing mode?
-  2. 
+  2. post request returns 404 not found.
+  -> sol : make db for the specific port. There was no db for meanstack_project4.
+  + set the url in authenticateUser to http://localhost:3000/users/authenticate.
   3.
 
 
