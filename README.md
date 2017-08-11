@@ -97,9 +97,6 @@ git pull origin master
 - -> 
 
 ### CHECKLIST
-
-- [ ] 20170810 : add post making in the dashboard.
-
 #### plan
 - make a component name = "postdata"
 - add a service name = "postservice"
@@ -113,6 +110,12 @@ git pull origin master
 
 - [ ] add delete user account, edit user account functionality.
 
+- [ ] in user register, check duplicate name ( since name should be unique in the database. )
+- [ ] in user register, check duplicate email ( since you should check do the validation through email. )
+
+- [ ] (major) add a post edit, delete functionality.
+- [ ] change addpost -> make it a post component and insert the component.
+
 
 
 ### issues
@@ -120,7 +123,9 @@ git pull origin master
   2. post request returns 404 not found.
   -> sol : make db for the specific port. There was no db for meanstack_project4.
   + set the url in authenticateUser to `http://localhost:3000/users/authenticate.`
-  3.
+  + don't waste next(). it's duplicate send to http module.
+  3. how do you have user data in serverside? since you only check the login data in validation. how do you save it?
+  -> use localStorage.getItem('user');
 
 
 # Angular 4 crash course
